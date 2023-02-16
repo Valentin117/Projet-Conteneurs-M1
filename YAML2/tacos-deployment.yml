@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pizza-deployment
+  name: tacos-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pizza
+      app: tacos
   template:
     metadata:
       labels:
-        app: pizza
+        app: tacos
     spec:
       containers:
-      - name: pizza
-        image: valentin117/eatsout:pizza
+      - name: tacos
+        image: valentin117/eatsout:tacos
         ports:
         - containerPort: 80

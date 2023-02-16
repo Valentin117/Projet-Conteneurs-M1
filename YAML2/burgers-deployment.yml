@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pizza-deployment
+  name: burgers-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pizza
+      app: burgers
   template:
     metadata:
       labels:
-        app: pizza
+        app: burgers
     spec:
       containers:
-      - name: pizza
-        image: valentin117/eatsout:pizza
+      - name: burgers
+        image: valentin117/eatsout:burgers
         ports:
         - containerPort: 80

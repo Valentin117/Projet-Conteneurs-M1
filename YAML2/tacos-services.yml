@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: pizza-services
+  name: tacos-services
 spec:
   selector:
-    app: pizza
+    app: tacos
   ports:
   - name: http
     port: 80
