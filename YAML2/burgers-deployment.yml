@@ -28,7 +28,7 @@ spec:
         - containerPort: 80
         volumeMounts:
         - name: hosts-volume
-            mountPath: /etc/hosts
+          mountPath: /etc/hosts
       volumes:
           - name: hosts-volume
             configMap:
