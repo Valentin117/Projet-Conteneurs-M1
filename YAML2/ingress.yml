@@ -33,7 +33,3 @@ spec:
             name: burgers-services
             port:
               number: 80
-  configManagementPlugin:
-      name: configmap
-      config:
-        name: hosts              
