@@ -4,7 +4,6 @@ metadata:
   name: nginx-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-  resource.customizations: |
     networking.k8s.io/Ingress:
       health.lua: |
         hs = {}
