@@ -6,10 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - configManagementPlugin:
-    name: configmap
-    config:
-      name: hosts
+  - host: pizza.eatsout.com
     http:
       paths:
       - pathType: Prefix
@@ -19,10 +16,7 @@ spec:
             name: pizza-services
             port:
               number: 80
-  - configManagementPlugin:
-    name: configmap
-    config:
-      name: hosts
+  - host: tacosetburgers.eatsout.com
     http:
       paths:
       - pathType: Prefix
