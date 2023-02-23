@@ -7,8 +7,8 @@
 127.0.0.1       srv-prod.test
 127.0.0.1       srv-dev.test
 # Projet final Conteneurs
-172.30.231.197  pizza.eatsout.com
-172.30.231.197  tacosetburgers.eatsout.com
+172.30.231.193  pizza.eatsout.com
+172.30.231.193  tacosetburgers.eatsout.com
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
