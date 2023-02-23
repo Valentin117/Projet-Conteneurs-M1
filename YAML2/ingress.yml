@@ -4,12 +4,6 @@ metadata:
   name: nginx-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-  resource.customizations: |
-    extensions/Ingress:
-      health.lua:
-        hs = {}
-        hs.status = "Healthy"
-        return hs
 spec:
   rules:
   - host: pizza.eatsout.com
