@@ -4,7 +4,7 @@ metadata:
   name: nginx-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    networking.k8s.io/Ingress:
+    networking.k8s.io/Ingress: /
 spec:
   rules:
   - host: pizza.eatsout.com
