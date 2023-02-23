@@ -4,8 +4,8 @@ metadata:
   name: hosts-configmap
 data:
   hosts: |
-    127.0.0.1       tacosetburgers.eatsout.com/tacos
-    172.30.231.193  tacosetburgers.eatsout.com/tacos
+    127.0.0.1       tacosetburgers.eatsout.com
+    172.30.231.193  tacosetburgers.eatsout.com
 ---
 apiVersion: apps/v1
 kind: Deployment
