@@ -9,3 +9,31 @@ spec:
     name: configmap
     config:
       name: hosts
+  rules:
+  - host: pizza.eatsout.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: pizza-services
+            port:
+              number: 80
+  - host: tacosetburgers.eatsout.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/tacos"
+        backend:
+          service:
+            name: tacos-services
+            port:
+              number: 80
+      - pathType: Prefix
+        path: "/burgers"
+        backend:
+          service:
+            name: burgers-services
+            port:
+              number: 80
